@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Print my array</title>
+<script>
+function PrintmyArray (teachers){
+  var i;
+  var text="";
+  for( i=0; i<teachers.length; i++) {
+    if (  i=== teachers.length-1)
+    {
+        text+= " and "+ teachers[i]
+    }
+    else{
+      text+= ", "+ teachers[i]
+    }
+  }
+  return text;
+  }
+
+</script>
+</head>
+<body>
+
+  <script>
+  var Printmy =Array ("Luc", "Mathew", "Matti", "Sanna", "Anders" , "Mauricette");
+
+  document.write(PrintmyArray(Printmy));
+  </script>
+
+</body>
+</html>
