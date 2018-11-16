@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <title>Print My Array</title>
   <script>
   function PrintmyArray (students){
@@ -29,3 +30,38 @@
     </script>
   </body>
   </html>
+=======
+<title> Print my array</title>
+<script>
+function PrintmyArray (teachers){
+  var i;
+  var text="";
+  for( i=0; i<teachers.length; i++) {
+    if (  i=== teachers.length-1)
+    {
+        text+= " and "+ teachers[i]
+    }
+    else if (i===0) {
+        text+= teachers[i]
+
+    }
+    else{
+      text+= ", "+ teachers[i]
+    }
+  }
+  return text;
+  }
+
+</script>
+</head>
+<body>
+
+  <script>
+  var Printmy =Array ("Luc", "Mathew", "Matti", "Sanna", "Anders" , "Mauricette");
+
+  document.write(PrintmyArray(Printmy));
+  </script>
+
+</body>
+</html>
+>>>>>>> 85a5c43ee675cd2f4a04930163fd4b4a95ad4233
