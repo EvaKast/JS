@@ -3,35 +3,34 @@
 <head>
 <title>MultiplyText</title>
 <script>
-function print(message){
-  var prefix= 'Your message:';
-  return prefix + message;
 
-function repeat(message , times){
+function repeatMe(){
 
-    var text = "";
+    var val =document.getElementById('inputField').value;
   var i;
-  for (i = 0; i < times; i++) {
-      text += message;
-  }
-text+=  "t";
-  return text;
+  var text="";
+  for ( i= 0 ; i<10; i++){
+text+=  val+"<br>";
 }
-}
-
+ document.getElementById('result').innerHTML = "you typed"+ text;
 </script>
 </head>
 
 <body>
-  <button name="Repeat Me"
-  type="button" >
-</button>
-<script>
-document.write(print("Hello")){
-document.write(repeat("Hello",20))
-}
-
+  <script>
+  repeatme()
 </script>
+<h1> Ten times More </h1>
+<p> Write something in the text field and click the button.</p>
+
+<input type="text" id="inputField">
+<button onclick="repeatMe()">Click me!</button>
+
+<p> Output:</p>
+  <p><a href="index.html">Home</a></p>
+>GSGHDJDHQNSUJDKZNSUJXUJ
+
+<div id="result">
 
 </body>
 </html>
